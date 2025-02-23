@@ -7,7 +7,7 @@ function OurPolicy() {
       <div>
         <img src={assets.exchange_dark_icon} className='w-12 m-auto mb-5' alt="" />
         <p className='semi-bold'>Easy Exchange Policy</p>
-        <p className='text-[#DEE2E6]'>We offer hassle free exchage policy</p>
+        <p className='text-[#DEE2E6]'>We offer hassle free exchange policy</p>
       </div>
       <div>
         <img src={assets.quality_icon} className='w-12 m-auto mb-5' alt="" />

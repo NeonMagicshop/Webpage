@@ -46,7 +46,7 @@ function TermsConditions() {
             <br/>10. Governing Law These Terms are governed by the laws of
             Pakistan, without regard to its conflict of law provisions. 
             <br/>11. Contact Us If you have any questions about these Terms, please
-            contact us at info@neonmagic.shop or you can contact us on +92-318-252-5652. 
+            contact us at support@neonmagic.shop or you can contact us on +92-318-252-5652. 
             <br/>Effective Date: 18th January 2025
           </p>
         </div>

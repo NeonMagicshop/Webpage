@@ -13,7 +13,7 @@ function Contact() {
       <div className="flex flex-col justify-center items-start gap-6">
         <p className='font-semibold text-xl text-[#DEE2E6]'>Say Hello!</p>
         <p className='text-[#ADB5BD]'>Have questions or a custom neon sign idea in mind? <br /> Reach out to us on Whatsapp</p>
-        <p className='text-[#ADB5BD]'>Tel: +92 318 2525652 <br /> Email: admin@forever.com</p>
+        <p className='text-[#ADB5BD]'>Tel: +92 318 2525652 <br /> Email: support@neonmagic.shop</p>
         {/* <p className='font-semibold text-xl text-[#DEE2E6]'>Careers at Forever</p>
         <p className='text-[#ADB5BD]'>Lear more about our teams and job openings.</p>
 

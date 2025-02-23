@@ -47,7 +47,7 @@ function Footer() {
                     <p className="text-xl font-medium mb-5 text-[#DEE2E6]">GET IN TOUCH</p>
                     <ul className="flex flex-col gap-1 text-[#ADB5BD]">
                         <li>+92-318-252-5652</li>
-                        <li>contact@Lumeon.com</li>
+                        <li>support@neonmagic.shop</li>
                     </ul>
                     <ul className="flex pt-2 gap-5 text-[#ADB5BD]">
                       <a href="https://wa.me/923182525652" className="w-6 sm:w-8 cursor-pointer"><img src={assets.whatsapp_icon} alt="" /></a>
@@ -59,7 +59,7 @@ function Footer() {
             <div>
                 <hr className="bg-[#ADB5BD]"/>
                 <p className="py-5 text-sm text-center text-[#ADB5BD]">
-                    Copyright 2025@Lumeon.com - All Right Reserved.
+                    Copyright 2025@NeonMagic.shop - All Right Reserved.
                 </p>
             </div>
         </div>

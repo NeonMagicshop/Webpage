@@ -19,14 +19,14 @@ function ShippingPolicy() {
             <br />Standard Shipping: 5-7 business days 
             <br />Shipping times may vary depending on your location and carrier delays. 
             <br />Domestic Shipping: We currently ship to addresses within Pakistan. 
-            <br />Order Tracking: Once your order has shipped, you will receive a tracking number via email
+            <br />Order Tracking: Once your order has placed, you will receive a tracking number via email
             or whatsapp to monitor your shipment. 
             <br />Lost or Damaged Items: If your order arrives damaged or is lost in transit, 
-            <br />please contact us at info@neonmagic.shop or you can contact us on +92 318 2525652 within 7
+            <br />please contact us at support@neonmagic.shop or you can contact us on +92 318 2525652 within 7
             days of receipt, and we will work with the carrier to resolve the
             issue. 
             <br />Contact Us: For any shipping-related inquiries, please
-            contact our customer support team at info@neonmagic.shop or you can
+            contact our customer support team at support@neonmagic.shop or you can
             contact us on +92 318 2525652 
             <br />Thank you for shopping with us! ٖ
           </p>

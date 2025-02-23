@@ -6,7 +6,9 @@ import nodemailer from 'nodemailer'
 const sendNewOrderInfoAdmin = async () => {
     try {
     var transporter = nodemailer.createTransport({
-        service: "gmail",
+        host: "smtp.zoho.com",
+        secure: true,
+        port: 465,
         auth: {
             user: process.env.NODEMAILER_EMAIL,
             pass: process.env.NODEMAILER_PASSWORD
@@ -55,7 +57,9 @@ const sendOrderConfirmationEmail = async (orderId) => {
         const { address: { firstName, lastName, email } } = order;
 
         var transporter = nodemailer.createTransport({
-            service: "gmail",
+            host: "smtp.zoho.com",
+            secure: true,
+            port: 465,
             auth: {
                 user: process.env.NODEMAILER_EMAIL,
                 pass: process.env.NODEMAILER_PASSWORD
@@ -69,8 +73,8 @@ const sendOrderConfirmationEmail = async (orderId) => {
           and can't wait for you to see the magic come to light!</p>
           <p>Use the following Order ID for updates on the stage of your order</p>
           <p><strong>Order Number:</strong> ${orderId}</p> 
-          <p>You can view your order details here: <a href="your-order-tracking-url">Order Tracking Link</a></p>
-          <p>If you have any questions regarding your order, feel free to reach us out at neonmagic@gmail.com or +92-336-563-5253</p> 
+          <p>You can view your order details here: <a href="https://neonmagic.shop/track-order">Order Tracking Link</a></p>
+          <p>If you have any questions regarding your order, feel free to reach us out at support@neonmagic.shop or +92-336-563-5253</p> 
           <p>Warm Regards,</p>
           <p>The NeonMagic Family</p>
         `;
@@ -116,7 +120,9 @@ const orderUpdateStautsEmail = async (orderId, status) => {
         const { address: { firstName, lastName, email } } = order;
 
         var transporter = nodemailer.createTransport({
-            service: "gmail",
+            host: "smtp.zoho.com",
+            secure: true,
+            port: 465,
             auth: {
                 user: process.env.NODEMAILER_EMAIL,
                 pass: process.env.NODEMAILER_PASSWORD
@@ -128,8 +134,8 @@ const orderUpdateStautsEmail = async (orderId, status) => {
         <p>Good news! Your order is now ${status}.</p>
         <p>We're excited to get your Neon Magic creation on its way to you.  We appreciate your patience!</p>
         <p>Use your Order ID for updates on the stage of your order</p>
-        <p>You can view your order details here: <a href="your-order-tracking-url">Order Tracking Link</a></p>
-        <p>If you have any questions regarding your order, feel free to reach us out at neonmagic@gmail.com or +92-336-563-5253</p> 
+        <p>You can view your order details here: <a href="https://neonmagic.shop/track-order">Order Tracking Link</a></p>
+        <p>If you have any questions regarding your order, feel free to reach us out at support@neonmagic.shop or +92-336-563-5253</p> 
         <p>Warm Regards,</p>
         <p>The NeonMagic Family</p>
         `;
@@ -138,8 +144,8 @@ const orderUpdateStautsEmail = async (orderId, status) => {
         <p>Dear ${firstName} ${lastName},</p>
         <p>Your order has been delivered! We hope you're enjoying your new Neon Magic product.</p>
         <p>We're thrilled you've joined the Neon Magic family, we hope to see you again!</p>
-        <p>You can view your order details here: <a href="your-order-tracking-url">Order Tracking Link</a></p>
-        <p>If you have any questions regarding your order, feel free to reach us out at neonmagic@gmail.com or +92-336-563-5253</p> 
+        <p>You can view your order details here: <a href="https://neonmagic.shop/track-order">Order Tracking Link</a></p>
+        <p>If you have any questions regarding your order, feel free to reach us out at support@neonmagic.shop or +92-336-563-5253</p> 
         <p>Warm Regards,</p>
         <p>The NeonMagic Family</p>`
         
