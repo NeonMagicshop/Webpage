@@ -3,6 +3,7 @@ import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title';
 import axios, { all } from 'axios';
 import { toast } from 'react-toastify';
+import MetaPixel from '../utils/meta/MetaPixel';
 
 // order-1737113788532-xwdbd
 function TrackOrder() {
@@ -38,6 +39,7 @@ function TrackOrder() {
 
   return (
     <div className='border-t border-[#ADB5BD] pt-16'>
+    <MetaPixel />
       <div className="text-2xl">
         <Title text1={'Track'} text2={'ORDER'}/>
       </div>

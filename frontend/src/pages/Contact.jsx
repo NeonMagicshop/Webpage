@@ -1,10 +1,12 @@
 import React from 'react'
 import Title from '../components/Title'
 import { assets } from '../assets/assets'
+import MetaPixel from '../utils/meta/MetaPixel';
 
 function Contact() {
   return (
     <div>
+    <MetaPixel />
     <div className='text-center text-2xl pt-10 border-t'>
       <Title text1={'CONTACT'} text2={'US'}/>
     </div>

@@ -1,11 +1,13 @@
 import React from 'react'
 import { useContext } from 'react'
 import { ShopContext } from '../context/ShopContext'
+import MetaPixelLead from '../utils/meta/MetaPixelLead';
 
 function OrderPlaced() {
     const {navigate, token, setCartItems, backendUrl} = useContext(ShopContext);
   return (
     <div>
+    <MetaPixelLead />
       <div className="text-center pt-8 border-t border-[#ADB5BD]">
         <h1 className='text-[#F48C06] my-4 text-xl sm:text-4xl'>Your Order Has been Placed Placed Successfully!</h1>
       </div>

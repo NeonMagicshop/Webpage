@@ -4,6 +4,7 @@ import { ShopContext } from '../context/ShopContext'
 import { useEffect } from 'react'
 import { assets } from '../assets/assets'
 import RelatedProducts from '../components/RelatedProducts'
+import MetaPixel from '../utils/meta/MetaPixel';
 
 function Products() {
   const {productId} = useParams();
@@ -41,6 +42,7 @@ function Products() {
   }, [productId])
   return productData ? (
     <div className='border-t-2 border-[#ADB5BD] pt-10 transition-opacity ease-in duration-500 opacity-100'>
+    <MetaPixel />
       {/* Product Data */}
       <div className='flex gap-12 sm:gap-12 flex-col  sm:flex-row'>
         {/* Product images */}

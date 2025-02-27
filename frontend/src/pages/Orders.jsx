@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title';
 import axios, { all } from 'axios';
+import MetaPixel from '../utils/meta/MetaPixel';
 
 function Orders() {
   const {backendUrl, token, currency } = useContext(ShopContext);
@@ -41,6 +42,7 @@ function Orders() {
 
   return (
     <div className='border-t border-[#ADB5BD] pt-16'>
+    <MetaPixel />
       <div className="text-2xl">
         <Title text1={'MY'} text2={'ORDERS'}/>
       </div>

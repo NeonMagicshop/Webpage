@@ -5,6 +5,8 @@ import { assets } from "../assets/assets";
 import { ShopContext } from "../context/ShopContext";
 import axios from "axios";
 import { toast } from "react-toastify";
+import InitiateCheckout from '../utils/meta/MetaPixelCheckout'
+import MetaPixelCheckout from "../utils/meta/MetaPixelCheckout";
 
 function PlaceOrder() {
   const {navigate, backendUrl, token, cartItems, setCartItems, getCartAmount, delivery_fee, products} = useContext(ShopContext);
@@ -93,6 +95,7 @@ function PlaceOrder() {
 
   return (
     <form onSubmit={onSubmitHandler} className="flex flex-col sm:flex-row justify-between gap-4 pt-5 sm:pt-14 min-h-[18vh] border-t border-[#ADB5BD]">
+      <MetaPixelCheckout />
       {/* Left side */}
       <div className="flex flex-col gap-4 w-full sm:max-w-[480px]">
         <div className="text-xl sm:text-2xl my-3">

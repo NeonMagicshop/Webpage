@@ -3,6 +3,7 @@ import {ShopContext} from '../context/ShopContext'
 import { assets } from '../assets/assets'
 import Title from '../components/Title'
 import ProductItem from '../components/ProductItem'
+import MetaPixel from '../utils/meta/MetaPixel';
 
 function Collection() {
   const { products, search, showSearch } = useContext(ShopContext);
@@ -71,6 +72,7 @@ function Collection() {
 
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t border-[#ADB5BD]'>
+    <MetaPixel />
       {/* Filter options */}
       <div className='min-2-60'>
         <p onClick={() => setShowFilter(!showFilter)} className='my-2 text-xl text-[#DEE2E6] flex items-center cursor-pointer gap-2'>FILTERS

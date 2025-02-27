@@ -1,9 +1,11 @@
 import React from "react";
 import Title from "../components/Title";
+import MetaPixel from '../utils/meta/MetaPixel';
 
 function RefundPolicy() {
   return (
     <div>
+    <MetaPixel />
       <div className="text-2xl text-center pt-8 border-t border-[#ADB5BD]">
         <Title text1={"Refund"} text2={"Policy"} />
       </div>

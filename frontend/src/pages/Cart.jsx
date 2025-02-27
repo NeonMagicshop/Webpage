@@ -3,6 +3,7 @@ import { ShopContext } from "../context/ShopContext";
 import Title from "../components/Title";
 import { assets } from "../assets/assets";
 import CartTotal from "../components/CartTotal";
+import MetaPixel from '../utils/meta/MetaPixel';
 
 function Cart() {
   const { products, currency, cartItems, updateQuantity, navigate } = useContext(ShopContext);
@@ -47,6 +48,7 @@ function Cart() {
               key={index}
               className="py-4 border-t border-b border-[#ADB5BD] text-[#ADB5BD] grid grid-cols-[4fr_0.5fr_0.5fr] sm:grid-cols-[4fr_2fr-0.5fr] items-center gap-4"
             >
+            <MetaPixel />
               <div className="flex items-center gap-6">
                 <img
                   src={productData.image[0]}
