@@ -15,7 +15,7 @@ function OrderPlaced() {
       <p >We at Neon Magic welcome you to the Neon Magic family, we appreciate for your trust in us,
       and can't wait for you to see the magic come to light!</p>
       <p className='text-[#DEE2E6]'>Be sure to check your email for the order confirmation. Didn't get the email? Be sure to check your spam email, ThankYou!</p>
-      <p>If you have any questions regarding your order, feel free to reach us out at <br/> neonmagic@gmail.com or +92-336-563-5253</p> 
+      <p>If you have any questions regarding your order, feel free to reach us out at <br/> support@neonmagic.shop or +92-318-252-5652</p> 
       {token ? <p className='cursor-pointer text-[#DEE2E6] hover:text-[#F48C06]'><a href="/orders">Continue To Order's Page</a></p>
       : <p className='cursor-pointer text-[#F48C06] hover:text-[#DEE2E6]'><a href="/track-order">Track Order</a></p>}
       <button onClick={() => navigate('/')} className='bg-black text-[#DEE2E6] text-xs px-10 py-4 mt-4'>Continue Shopping</button>

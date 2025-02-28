@@ -18,7 +18,7 @@ function CartTotal() {
         <hr />
         <div className='flex justify-between'>
             <p>DELIVERY FEE</p>
-            <p className='text-[#ADB5BD]'>{currency} {delivery_fee}.00</p>
+            <p className='text-[#ADB5BD]'>{delivery_fee === 0 ? "FREE" : "" + currency + delivery_fee + '.00'} </p>
         </div>
         <hr />
         <div className='flex justify-between'>
