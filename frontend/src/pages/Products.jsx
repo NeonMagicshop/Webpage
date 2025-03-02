@@ -70,7 +70,7 @@ function Products() {
             <p className='pl-2'>(122)</p>
           </div> */}
           <div className='flex flex-row gap-5 mt-5 text-2xl font-medium'>
-            <p className='line-through text-[#F48C06]'>{currency} {Math.round(price * 1.3)}</p>
+            <p className='line-through text-[#F48C06]'>{currency} {Math.round(price / 0.7)}</p>
             <p className='text-[#DEE2E6]'>{currency} {price}</p>
             <span class="bg-[#F48C06] text-[#DEE2E6] text-xs font-semibold px-4 py-2 rounded">Sale</span>
           </div>

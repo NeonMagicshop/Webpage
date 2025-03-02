@@ -15,7 +15,7 @@ function ProductItem({id, image, name, price}) {
       </div>
       <p className='pt-3 pb-1 text-sm'>{name}</p>
       <div className='flex flex-row gap-2'>
-        <p className='line-through text-[#F48C06] text-sm font-medium'>{currency} {Math.round(price * 1.3)}</p>
+        <p className='line-through text-[#F48C06] text-sm font-medium'>{currency} {Math.round(price / 0.7)}</p>
         <p className='text-sm font-medium'>{currency} {price}</p>
       </div>
     </Link>
