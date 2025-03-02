@@ -69,8 +69,13 @@ function Products() {
             <img src={assets.star_dull_icon} alt="" className="w-3.5" />
             <p className='pl-2'>(122)</p>
           </div> */}
-          <p className='mt-5 text-2xl text-[#DEE2E6] font-medium'>{currency} {price}</p>
+          <div className='flex flex-row gap-5 mt-5 text-2xl font-medium'>
+            <p className='line-through text-[#F48C06]'>{currency} {Math.round(price * 1.3)}</p>
+            <p className='text-[#DEE2E6]'>{currency} {price}</p>
+            <span class="bg-[#F48C06] text-[#DEE2E6] text-xs font-semibold px-4 py-2 rounded">Sale</span>
+          </div>
           <p className='mt-5 text-[#ADB5BD] md:w-4/5'>{productData.tagLine}</p>
+          <p className='mt-1 text-sm text-[#ADB5BD] md:w-4/5'><span className='text-[#F48C06]'>FREE</span> SHIPPING</p>
           <div className='flex flex-col gap-4 my-8'>
             <p className='text-[#DEE2E6]'>Select Size</p>
             <div className='flex gap-2'>

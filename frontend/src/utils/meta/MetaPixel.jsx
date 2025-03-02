@@ -28,4 +28,5 @@ const MetaPixel = () => {
     </Helmet>
   );
 };
+
 export default MetaPixel
